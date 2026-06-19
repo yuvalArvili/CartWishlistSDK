@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Share Cart"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Generate a code to share your cart with others."
+            android:textSize="14sp"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/btn_share_cart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Generate Share Code"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tv_share_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="12sp"
+            android:typeface="monospace"
+            android:layout_marginBottom="4dp" />
+
+        <Button
+            android:id="@+id/btn_copy_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Copy Code to Clipboard"
+            android:visibility="gone"
+            android:layout_marginBottom="16dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#DDDDDD"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Import a Shared Cart"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/et_share_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Paste share code here"
+            android:inputType="textNoSuggestions"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btn_import_cart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Import Cart"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tv_import_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="14sp" />
+
+    </LinearLayout>
+</ScrollView>

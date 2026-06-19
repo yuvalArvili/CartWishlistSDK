@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Shopping Cart"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add products to your cart:"
+            android:textSize="14sp"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btn_add_shirt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add T-Shirt — $29.99"
+            android:layout_marginBottom="4dp" />
+
+        <Button
+            android:id="@+id/btn_add_shoes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Running Shoes — $89.99"
+            android:layout_marginBottom="4dp" />
+
+        <Button
+            android:id="@+id/btn_add_watch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Smart Watch — $199.99"
+            android:layout_marginBottom="12dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#DDDDDD"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cart Contents"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/tv_cart_items"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="(empty)"
+            android:textSize="14sp"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tv_cart_total"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total: $0.00"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/btn_clear_cart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Clear Cart" />
+
+    </LinearLayout>
+</ScrollView>

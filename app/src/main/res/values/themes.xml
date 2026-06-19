@@ -1,0 +1,3 @@
+<resources>
+    <style name="Theme.Shopping_cart_sdk" parent="Theme.AppCompat.DayNight.NoActionBar" />
+</resources>

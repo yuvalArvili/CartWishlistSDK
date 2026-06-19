@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Wishlist"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save products for later:"
+            android:textSize="14sp"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btn_wish_shirt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save T-Shirt"
+            android:layout_marginBottom="4dp" />
+
+        <Button
+            android:id="@+id/btn_wish_shoes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Running Shoes"
+            android:layout_marginBottom="12dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#DDDDDD"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your Wishlist"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/tv_wishlist_items"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="(empty)"
+            android:textSize="14sp"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/btn_move_shirt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Move T-Shirt to Cart"
+            android:layout_marginBottom="4dp" />
+
+        <Button
+            android:id="@+id/btn_clear_wishlist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Clear Wishlist" />
+
+    </LinearLayout>
+</ScrollView>
