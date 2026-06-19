@@ -1,0 +1,36 @@
+*.iml
+.gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+
+# Build outputs
+**/build/
+**/*.apk
+**/*.aab
+
+# Python / backend
+**/__pycache__/
+**/*.pyc
+**/*.pyo
+backend/.venv/
+backend/venv/
+backend/.env
+
+# Uploaded images (runtime data, not source)
+backend/uploads/*
+!backend/uploads/.gitkeep
+
+# OS
+Thumbs.db
+desktop.ini
