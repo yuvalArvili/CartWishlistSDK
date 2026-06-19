@@ -1,0 +1,37 @@
+version: "3.9"
+
+services:
+  db:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: cwsk
+      POSTGRES_PASSWORD: cwsk_secret
+      POSTGRES_DB: cartwishlist
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U cwsk -d cartwishlist"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  api:
+    build: .
+    restart: unless-stopped
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      DATABASE_URL: postgresql+asyncpg://cwsk:cwsk_secret@db:5432/cartwishlist
+      SECRET_KEY: change_me_in_production
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./app:/app/app       # hot-reload in dev
+      - ./uploads:/app/uploads  # persisted image uploads
+
+volumes:
+  postgres_data:
